@@ -7,6 +7,11 @@
   justify-content: flex-start; /* Dikeyde yukarıdan başla */
   padding-top: 30px;
 
+  background-image: url("C:\github\Restaurant-Order-System\src\assets\fseHomePage.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .baslik2 {
@@ -45,7 +50,7 @@
 
 @media (max-width: 600px) {
   .div2 {
-    background-image: url("C:\Users\koray\OneDrive\Masaüstü\fse34yeni\public\fseBack2.png"); /* You need to add this image too */
+    background-image: url(""); /* You need to add this image too */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

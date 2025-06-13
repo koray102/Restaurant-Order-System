@@ -11,7 +11,7 @@ function WaiterCall() {
 
   const handleTableSubmit = () => {
     if (!callTable) {
-      alert("Lütfen masa numarası girin.");
+      alert("Please enter table number.");
       return;
     }
     setCallStep(2);
@@ -44,16 +44,17 @@ function WaiterCall() {
           padding: '10px',
           border: 'none',
           borderRadius: '5px',
+          fontFamily: 'Inria Serif', 
         }}
       >
-        Garsonu Çağır
+        Call Waiter
       </button>
 
       {callStep === 1 && (
         <div style={{ marginTop: '10px' }}>
           <input
             type="text"
-            placeholder="Masa numaranız"
+            placeholder="Table Number"
             value={callTable}
             onChange={(e) => setCallTable(e.target.value)}
             style={{ padding: '8px', borderRadius: '5px', marginRight: '10px' }}
@@ -68,15 +69,15 @@ function WaiterCall() {
               borderRadius: '5px',
             }}
           >
-            Devam Et
+            Continue
           </button>
         </div>
       )}
 
       {callStep === 2 && (
         <div style={{ marginTop: '10px' }}>
-          <p>Hangi sebeple garson çağırıyorsunuz?</p>
-          {['Temizlik', 'Teknik Aksaklık', 'Yemekle ilgili', 'Diğer'].map((reason) => (
+          <p style={{fontFamily: 'Inria Serif', }}>Why are you calling the waiter?</p>
+          {['Cleaning', 'Technical Difficulties', 'About Dishes', 'Other'].map((reason) => (
             <button
               key={reason}
               onClick={() => handleSendCall(reason)}
@@ -87,6 +88,7 @@ function WaiterCall() {
                 backgroundColor: '#4caf50',
                 color: 'white',
                 border: 'none',
+                fontFamily: 'Inria Serif', 
               }}
             >
               {reason}

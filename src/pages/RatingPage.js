@@ -30,8 +30,8 @@ function RatingPage() {
     try {
       await submitRatings(updatedCart);
     } catch (error) {
-      console.error("Puan gönderme hatası:", error);
-      alert("Bir puan gönderilirken hata oluştu!");
+      console.error("Error sending score:", error);
+      alert("An error occurred while sending a score!");
       return;
     }
 
@@ -44,7 +44,7 @@ function RatingPage() {
     localStorage.setItem('orders', JSON.stringify(updatedOrders));
     localStorage.removeItem('lastOrderForRating');
 
-    alert('Puanlarınız kaydedildi. Teşekkür ederiz!');
+    alert('Your scores have been saved. Thank you!');
     navigate('/');
   };
 

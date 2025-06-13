@@ -6,7 +6,7 @@ function RatingView({ order, ratings, setRatings, handleSubmit }) {
 
   return (
     <div className="rating-page">
-      <h2 className="rating-title">Yemeklerinizi Puanlayın</h2>
+      <h2 className="rating-title">Rate the Dishes</h2>
       <ul className="rating-list">
         {order.cart.map((item, index) => (
           <li key={index} className="rating-item">
@@ -20,7 +20,7 @@ function RatingView({ order, ratings, setRatings, handleSubmit }) {
                 setRatings({ ...ratings, [index]: Number(e.target.value) })
               }
             >
-              <option value="">Puan seçin</option>
+              <option value="">Choose a score</option>
               {[1, 2, 3, 4, 5].map((n) => (
                 <option key={n} value={n}>
                   {n}
@@ -31,7 +31,7 @@ function RatingView({ order, ratings, setRatings, handleSubmit }) {
         ))}
       </ul>
       <button className="rating-button" onClick={handleSubmit}>
-        Puanları Kaydet
+        Save the scores
       </button>
     </div>
   );

@@ -3,7 +3,7 @@ import React from 'react';
 function DeleteStaffForm({ deleteStaff, setDeleteStaff, onSubmit }) {
   return (
     <div className="admin-section">
-      <h3 className="section-title">Staff Sil</h3>
+      <h3 className="section-title">Delete Staff</h3>
       <input
         className="admin-input"
         placeholder="Username"
@@ -16,7 +16,7 @@ function DeleteStaffForm({ deleteStaff, setDeleteStaff, onSubmit }) {
         value={deleteStaff.location}
         onChange={(e) => setDeleteStaff({ ...deleteStaff, location: e.target.value })}
       />
-      <button className="admin-button" onClick={onSubmit}>Sil</button>
+      <button className="admin-button" onClick={onSubmit}>Delete</button>
     </div>
   );
 }

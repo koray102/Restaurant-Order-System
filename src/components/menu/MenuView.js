@@ -36,7 +36,7 @@ const MenuView = ({
       {isStaff && (
         <div>
           <button className="add-dish-btn" onClick={() => setIsAddModalOpen(true)}>
-            Yemek Ekle
+            Add Dish
           </button>
           <button
             onClick={goToStaffOrders}
@@ -48,7 +48,7 @@ const MenuView = ({
               borderRadius: '5px'
             }}
           >
-            Bildirimleri Görüntüle
+            View Notifications
           </button>
         </div>
       )}

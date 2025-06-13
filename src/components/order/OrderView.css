@@ -7,8 +7,13 @@
   justify-content: flex-start; /* Dikeyde yukarıdan başla */
   padding-top: 90px;
   
-
+  background-image: url("C:\github\Restaurant-Order-System\src\assets\fsePage2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+
 
 .titleorder{
     font-family: 'Inria Serif', serif;

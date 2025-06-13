@@ -35,7 +35,7 @@ function StartPage() {
     <div className="div2">
       <h2 className="baslik2">Select Your Location</h2>
 
-      <label htmlFor="locationSelect">Select Location:</label>
+      <label htmlFor="locationSelect" style={{fontFamily: 'Inria Serif'}}>Select Location:</label>
       <select 
         id="locationSelect" 
         value={location} 

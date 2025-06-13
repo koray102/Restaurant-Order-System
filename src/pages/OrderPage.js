@@ -28,15 +28,15 @@ function OrderPage() {
 
   const handlePayment = async () => {
     if (!tableNumber) {
-      alert('Lütfen masa numarasını girin.');
+      alert('Please enter the table number.');
       return;
     }
     if (cart.length === 0) {
-      alert('Sepetiniz boş.');
+      alert('Your cart is empty.');
       return;
     }
     if (!cardInfo) {
-      alert('Kart bilgisi giriniz.');
+      alert('Please enter card information.');
       return;
     }
 

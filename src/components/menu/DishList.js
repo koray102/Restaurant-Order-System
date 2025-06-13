@@ -15,7 +15,7 @@ function DishList({ dishes, isStaff, addToCart }) {
 
           {dish.averageRating !== undefined && (
             <p style={{ fontWeight: 'bold', color: '#f39c12' }}>
-              Ortalama Puan: {dish.averageRating.toFixed(1)} ⭐
+              Average Rating: {dish.averageRating.toFixed(1)} ⭐
             </p>
           )}
 

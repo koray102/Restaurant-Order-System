@@ -67,16 +67,16 @@ function MenuPage() {
 
     axios.post('http://localhost:8080/api/foods', updatedDishes[updatedDishes.length - 1])
       .then(response => {
-        console.log("Yemek eklendi:", response.data);
+        console.log("Dish added:", response.data);
       })
       .catch(error => {
-        console.error("Hata:", error);
+        console.error("Error:", error);
       });
   };
 
   const goToOrder = () => {
     if (cart.length === 0) {
-      alert('Sepetiniz boş. Lütfen önce ürün ekleyin.');
+      alert('Your cart is empty. Pleasw add product first!');
       return;
     }
     navigate('/order');
@@ -92,7 +92,7 @@ function MenuPage() {
 
       {isStaff ? (
         <>
-          <button className='add-dish-btn' onClick={() => setIsAddModalOpen(true)}>Yemek Ekle</button>
+          <button className='add-dish-btn' onClick={() => setIsAddModalOpen(true)}>Add Dish</button>
           <button
             onClick={goToStaffOrders}
             style={{
@@ -103,7 +103,7 @@ function MenuPage() {
               borderRadius: '5px'
             }}
           >
-            Bildirimleri Görüntüle
+            View Notifications
           </button>
         </>
       ) : (
@@ -120,7 +120,7 @@ function MenuPage() {
           newDish={newDish}
           setNewDish={setNewDish}
           onClose={() => setIsAddModalOpen(false)}
-          onSave={handleAddDish}
+          onAdd={handleAddDish}
         />
       )}
 

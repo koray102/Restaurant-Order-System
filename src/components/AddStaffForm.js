@@ -3,7 +3,7 @@ import React from 'react';
 function AddStaffForm({ newStaff, setNewStaff, onSubmit }) {
   return (
     <div className="admin-section">
-      <h3 className="section-title">Yeni Staff Ekle</h3>
+      <h3 className="section-title">Add New Staff</h3>
       <input
         className="admin-input"
         placeholder="Username"
@@ -28,7 +28,7 @@ function AddStaffForm({ newStaff, setNewStaff, onSubmit }) {
         value={newStaff.role}
         onChange={(e) => setNewStaff({ ...newStaff, role: e.target.value })}
       />
-      <button className="admin-button" onClick={onSubmit}>Ekle</button>
+      <button className="admin-button" onClick={onSubmit}>Add</button>
     </div>
   );
 }

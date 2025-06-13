@@ -8,7 +8,7 @@ const LOCATIONS = [
   { value: '', label: '-- Select Location --' },
   { value: 'Bornova', label: 'Bornova' },
   { value: 'Bostanli', label: 'Bostanli' },
-  { value: 'admin', label: 'admin' }
+  { value: 'Admin', label: 'Admin' }
 ];
 
 function LoginForm() {

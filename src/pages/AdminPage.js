@@ -60,7 +60,7 @@ function AdminPage() {
 
   return (
     <div className="admin-page">
-      <h2 className="admin-title">Admin Paneli</h2>
+      <h2 className="admin-title">Admin Panel</h2>
 
       <AddStaffForm
         newStaff={newStaff}
@@ -75,7 +75,7 @@ function AdminPage() {
       />
 
       <div className="admin-section">
-        <h3 className="section-title">Şubeler</h3>
+        <h3 className="section-title">Branches</h3>
         <div className="location-buttons">
           {locations.map(loc => (
             <button key={loc} className="location-button" onClick={() => handleSelectLocation(loc)}>

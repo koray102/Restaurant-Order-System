@@ -6,6 +6,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background-image: url("C:\github\Restaurant-Order-System\src\assets\fsePage2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .admin-title {

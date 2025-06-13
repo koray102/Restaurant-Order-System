@@ -3,7 +3,7 @@ import React from 'react';
 
 function CartList({ cart }) {
   if (cart.length === 0) {
-    return <p>Sepetiniz boş.</p>;
+    return <p>Your cart is empty.</p>;
   }
 
   return (

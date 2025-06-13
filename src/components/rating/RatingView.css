@@ -1,0 +1,56 @@
+.rating-page {
+  background-color: #fffaf0;
+  font-family: 'Inria Serif', serif;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.rating-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+.rating-item {
+  margin-bottom: 20px;
+}
+
+.item-info {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.rating-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: 'Inria Serif', serif;
+}
+
+.rating-button {
+  font-family: 'Inria Serif', serif;
+  color: #fffaf0;
+  background-color: chocolate;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  width: 100%; /* Bu satırı değiştiriyoruz */
+  max-width: 400px; /* select ile aynı hizaya gelsin */
+  box-sizing: border-box;
+}

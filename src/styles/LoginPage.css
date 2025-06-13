@@ -1,0 +1,102 @@
+.login-container {
+  background-color: #fffaf0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;      /* Alt alta dizmek için */
+  align-items: center;         /* Yatay ortalama */
+  justify-content: flex-start; /* Dikeyde yukarıdan başla */
+  padding-top: 30px;
+
+}
+
+.login-title {
+  text-align: center;
+  color: chocolate;
+  font-family: 'Inria Serif', serif;
+  margin-top: 60px;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-input {
+  display: block;
+  width: 20%;
+  padding: 10px;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.login-input.error {
+  border-color: red;
+}
+
+.login-select {
+  display: block;
+  width: 20%;
+  padding: 10px;
+  
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  margin-top: 20px;
+}
+
+.login-select.error {
+  border-color: red;
+}
+
+.login-button {
+  width: 20%;
+  
+  background-color: chocolate;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Inria Serif', serif;
+
+  margin-top: 30px;
+  padding: 12px 24px;
+  
+  border-radius: 0;
+  
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+  .login-container {
+    background-image: url("C:\Users\koray\OneDrive\Masaüstü\fse34yeni\public\fseBack2.png"); /* You need to add this image too */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh; 
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .login-input,
+  .login-select,
+  .login-button {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .login-button {
+    padding: 10px 20px;
+  }
+}

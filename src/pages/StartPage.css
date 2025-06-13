@@ -1,0 +1,78 @@
+.div2 {
+  background-color: #fffaf0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;      /* Alt alta dizmek için */
+  align-items: center;         /* Yatay ortalama */
+  justify-content: flex-start; /* Dikeyde yukarıdan başla */
+  padding-top: 30px;
+
+}
+
+.baslik2 {
+  font-family: 'Inria Serif', serif;
+  color: chocolate;
+  text-align: center;
+  font-size: 60px;
+  font-weight: normal;
+  font-style: italic;
+  
+  margin: 50px; /* Kenar boşluğunu sıfırla */
+}
+.idk{
+    font-family: 'Inria Serif', serif;
+}
+
+#locationSelect {
+  font-family: 'Inria Serif', serif;
+  width: 240px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.menuButton {
+  font-family: 'Inria Serif', serif;
+  color: #fffaf0;
+  background-color: chocolate;  
+  margin-top: 60px;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 0;
+  border-color: chocolate;
+  cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .div2 {
+    background-image: url("C:\Users\koray\OneDrive\Masaüstü\fse34yeni\public\fseBack2.png"); /* You need to add this image too */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh; 
+  }
+
+  .baslik2 {
+    margin-top: 95px;
+    font-size: 36px;
+    
+  }
+ .idk{
+    margin-top: 30px;
+ }
+
+  #locationSelect {
+    
+    width: 50%;
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .menuButton {
+    width: 40%;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 40px;
+  }
+}

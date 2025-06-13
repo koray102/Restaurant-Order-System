@@ -120,7 +120,7 @@ function MenuPage() {
           newDish={newDish}
           setNewDish={setNewDish}
           onClose={() => setIsAddModalOpen(false)}
-          onSave={handleAddDish}
+          addDish={handleAddDish}
         />
       )}
 
